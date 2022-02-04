@@ -13,9 +13,12 @@
 		4AE06E3527AD4953004D897A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AE06E3327AD4953004D897A /* Main.storyboard */; };
 		4AE06E3727AD4955004D897A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AE06E3627AD4955004D897A /* Assets.xcassets */; };
 		4AE06E3A27AD4955004D897A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AE06E3827AD4955004D897A /* LaunchScreen.storyboard */; };
+		4AE06E4227AD495D004D897A /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE06E4127AD495D004D897A /* API.swift */; };
+		60E6241415D25299D984D0C6 /* Pods_ExShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E534FCDE8FD1BD87B75B90C8 /* Pods_ExShare.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E18D4DF3DA06D9C8BF899EF /* Pods-ExShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExShare.debug.xcconfig"; path = "Target Support Files/Pods-ExShare/Pods-ExShare.debug.xcconfig"; sourceTree = "<group>"; };
 		4AE06E2A27AD4953004D897A /* ExShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AE06E2D27AD4953004D897A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AE06E2F27AD4953004D897A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		4AE06E3627AD4955004D897A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AE06E3927AD4955004D897A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4AE06E3B27AD4955004D897A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AE06E4127AD495D004D897A /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		77B4D0C32DF80F135E404799 /* Pods-ExShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExShare.release.xcconfig"; path = "Target Support Files/Pods-ExShare/Pods-ExShare.release.xcconfig"; sourceTree = "<group>"; };
+		E534FCDE8FD1BD87B75B90C8 /* Pods_ExShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60E6241415D25299D984D0C6 /* Pods_ExShare.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08C48CA36A8E44F5611B86EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E18D4DF3DA06D9C8BF899EF /* Pods-ExShare.debug.xcconfig */,
+				77B4D0C32DF80F135E404799 /* Pods-ExShare.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4AE06E2127AD4953004D897A = {
 			isa = PBXGroup;
 			children = (
 				4AE06E2C27AD4953004D897A /* ExShare */,
 				4AE06E2B27AD4953004D897A /* Products */,
+				08C48CA36A8E44F5611B86EB /* Pods */,
+				9456CBC66A0220DD35A94889 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +78,21 @@
 				4AE06E2D27AD4953004D897A /* AppDelegate.swift */,
 				4AE06E2F27AD4953004D897A /* SceneDelegate.swift */,
 				4AE06E3127AD4953004D897A /* ViewController.swift */,
+				4AE06E4127AD495D004D897A /* API.swift */,
 				4AE06E3327AD4953004D897A /* Main.storyboard */,
 				4AE06E3627AD4955004D897A /* Assets.xcassets */,
 				4AE06E3827AD4955004D897A /* LaunchScreen.storyboard */,
 				4AE06E3B27AD4955004D897A /* Info.plist */,
 			);
 			path = ExShare;
+			sourceTree = "<group>";
+		};
+		9456CBC66A0220DD35A94889 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E534FCDE8FD1BD87B75B90C8 /* Pods_ExShare.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AE06E3E27AD4955004D897A /* Build configuration list for PBXNativeTarget "ExShare" */;
 			buildPhases = (
+				96CDCE74BB856A82A5421579 /* [CP] Check Pods Manifest.lock */,
 				4AE06E2627AD4953004D897A /* Sources */,
 				4AE06E2727AD4953004D897A /* Frameworks */,
 				4AE06E2827AD4953004D897A /* Resources */,
+				DDBDD0A08E5169986533AF84 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +163,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		96CDCE74BB856A82A5421579 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExShare-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDBDD0A08E5169986533AF84 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExShare/Pods-ExShare-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExShare/Pods-ExShare-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExShare/Pods-ExShare-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4AE06E2627AD4953004D897A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +212,7 @@
 			files = (
 				4AE06E3227AD4953004D897A /* ViewController.swift in Sources */,
 				4AE06E2E27AD4953004D897A /* AppDelegate.swift in Sources */,
+				4AE06E4227AD495D004D897A /* API.swift in Sources */,
 				4AE06E3027AD4953004D897A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +357,7 @@
 		};
 		4AE06E3F27AD4955004D897A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E18D4DF3DA06D9C8BF899EF /* Pods-ExShare.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +386,7 @@
 		};
 		4AE06E4027AD4955004D897A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77B4D0C32DF80F135E404799 /* Pods-ExShare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
